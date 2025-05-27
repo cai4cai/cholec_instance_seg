@@ -52,8 +52,8 @@ def generate_instance_dict_json_from_label_me_json (pred_json_path, height, widt
         # Create a unique key using both the label and group_id
         unique_key = str( (shape["label"], shape["group_id"]) )
         
-        if unique_key in instance_dict:
-            instance_dict[unique_key]['instance_annotations']["polygons"].append(shape["points"]) 
+        if unique_key in instance_dict['instance_annotations']:
+            instance_dict['instance_annotations'][unique_key]["polygons"].append(shape["points"]) 
         else: 
             instance_dict['instance_annotations'][unique_key] = {
                 "label":  shape["label"],
@@ -61,7 +61,8 @@ def generate_instance_dict_json_from_label_me_json (pred_json_path, height, widt
                 "group_id": shape["group_id"],
             }   
     
-    #genreate rle       
+     
+    
      
     for unique_key, instance_info in instance_dict['instance_annotations'].items():
         # print(instance_info)
@@ -72,7 +73,8 @@ def generate_instance_dict_json_from_label_me_json (pred_json_path, height, widt
         instance_mask = polygons_to_mask(polygons, height, width)
         
         instance_dict['instance_annotations'][unique_key]['instance_mask'] = instance_mask.tolist()
-        
+    
+    
     return instance_dict 
             
 def convert_label_me_json_to_semantic_mask(label_me_json_path,
@@ -107,6 +109,7 @@ def convert_label_me_json_to_semantic_mask(label_me_json_path,
     final_mask_bgr = cv2.cvtColor(final_semantic_mask, cv2.COLOR_RGB2BGR)  # Convert back to BGR for OpenCV saving
     cv2.imwrite(save_path, final_mask_bgr)
     print(f'Generated semantic mask for {img_name} and stored in {save_path}')
+    
     
 
 def convert_label_me_json_to_semantic_mask_for_directory(label_me_json_dir, img_dir, semantic_map_save_dir, keep_instance_info=False):
