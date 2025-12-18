@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use CholecInstanceSeg, please cite the Scientific Data paper."
+title: "CholecInstanceSeg"
+type: software
+url: "https://github.com/cai4cai/cholec_instance_seg"
+
+authors:
+  - family-names: "Alabi"
+    given-names: "Oluwatosin"
+  - family-names: "Toe"
+    given-names: "Ko Ko Zayar"
+  - family-names: "Zhou"
+    given-names: "Zijian"
+  - family-names: "Budd"
+    given-names: "Charlie"
+  - family-names: "Raison"
+    given-names: "Nicholas"
+  - family-names: "Shi"
+    given-names: "Miaojing"
+  - family-names: "Vercauteren"
+    given-names: "Tom"
+
+preferred-citation:
+  type: article
+  title: "CholecInstanceSeg: A Tool Instance Segmentation Dataset for Laparoscopic Surgery"
+  authors:
+    - family-names: "Alabi"
+      given-names: "Oluwatosin"
+    - family-names: "Toe"
+      given-names: "Ko Ko Zayar"
+    - family-names: "Zhou"
+      given-names: "Zijian"
+    - family-names: "Budd"
+      given-names: "Charlie"
+    - family-names: "Raison"
+      given-names: "Nicholas"
+    - family-names: "Shi"
+      given-names: "Miaojing"
+    - family-names: "Vercauteren"
+      given-names: "Tom"
+  journal: "Scientific Data"
+  year: 2025
+  volume: 12
+  number: 1
+  pages: 825
+  doi: "10.1038/s41597-025-05163-w"

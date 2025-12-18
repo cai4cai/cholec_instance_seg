@@ -52,6 +52,11 @@ There are seven tool categories annotated in CholecInstanceSeg. Grasper, Bipolar
 
 ![tools](./images/tools.PNG)
 
+## Hard cases
+Examples of challenging visual conditions in laparoscopic video (e.g., motion blur, smoke, specular reflections, occlusions, low light).
+
+![Examples of hard cases in the dataset](./images/hard_cases.png)
+
 ---
 
 ## Utils
@@ -67,15 +72,20 @@ This repository contains various utility functions and notebooks showing their u
 ---
 
 ## Citing CholecInstanceSeg. 
-If you use the annotations provided by our dataset, please include the BibTex citation for the [dataset paper](https://arxiv.org/pdf/2406.16039)  .
+If you use the annotations provided by our dataset, please include the BibTex citation for the [dataset paper](https://doi.org/10.1038/s41597-025-05163-w).
 
 ---
 
 ```bibtex
-@article{alabi2024cholecinstanceseg,
-  title={CholecInstanceSeg: A Tool Instance Segmentation Dataset for Laparoscopic Surgery},
-  author={Alabi, Oluwatosin and Toe, Ko Ko Zayar and Zhou, Zijian and Budd, Charlie and Raison, Nicholas and Shi, Miaojing and Vercauteren, Tom},
-  journal={arXiv preprint arXiv:2406.16039},
-  year={2024}
+@article{alabi2025cholecinstanceseg,
+  title        = {CholecInstanceSeg: A Tool Instance Segmentation Dataset for Laparoscopic Surgery},
+  author       = {Alabi, Oluwatosin and Toe, Ko Ko Zayar and Zhou, Zijian and Budd, Charlie and Raison, Nicholas and Shi, Miaojing and Vercauteren, Tom},
+  journal      = {Scientific Data},
+  volume       = {12},
+  number       = {1},
+  pages        = {825},
+  year         = {2025},
+  publisher    = {Nature Publishing Group UK London},
+  doi          = {10.1038/s41597-025-05163-w}
 }
 ```
